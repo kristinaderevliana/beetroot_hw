@@ -174,10 +174,16 @@ button {
   font-size: 25px;
   color: #fff;
   cursor: pointer;
+  opacity: 0.6;
+  transition: ease all 0.2s;
 }
 
 button:focus-within {
-  opacity: 0.6;
+  opacity: 1;
+}
+
+button:hover {
+  opacity: 1;
 }
 
 /* Text */
