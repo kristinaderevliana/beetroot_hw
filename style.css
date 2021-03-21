@@ -66,7 +66,7 @@ body {
   top: 8%;
 }
 
-.title__container {
+.header__title_container {
   width: 875px;
   height: 190px;
   background-color: #181818;
@@ -81,7 +81,7 @@ body {
   align-items: center;
 }
 
-.title__inner {
+.header__title_inner {
   width: 815px;
   height: 90px;
   border-bottom: 3px solid #303030;
@@ -100,7 +100,7 @@ body {
   align-items: flex-start;
 }
 
-.inner__suptitle {
+.header__subtitle {
   font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -108,7 +108,7 @@ body {
   letter-spacing: 0.32em;
 }
 
-.inner__title {
+.header__title {
   font-family: "Playfair Display", serif;
   font-size: 48px;
   font-weight: 400;
@@ -121,7 +121,7 @@ body {
   align-items: center;
 }
 
-.inner__title::after {
+.header__title_name::after {
   content: "";
   display: block;
   width: 2px;
@@ -131,7 +131,7 @@ body {
 }
 
 /* Control bar */
-.control__bar {
+.control-bar {
   width: 812px;
   height: 76px;
   background-color: #f9be2d;
@@ -147,11 +147,11 @@ body {
   color: #fff;
 }
 
-.bar__inner {
+.control-bar__container {
   width: 730px;
 }
 
-.bar__icons {
+.control-bar__icons {
   width: 570px;
   height: 35px;
   display: -webkit-box;
@@ -187,7 +187,7 @@ button:hover {
 }
 
 /* Text */
-.main__text {
+.main-text {
   margin: 0 auto;
   width: 1060px;
   height: 750px;
@@ -206,7 +206,7 @@ button:hover {
   justify-content: center;
 }
 
-.text__container {
+.main-text__container {
   width: 910px;
   height: 750px;
   border-left: 2px solid #e8eced;
@@ -221,7 +221,7 @@ button:hover {
   align-items: flex-end;
 }
 
-.text__inner {
+.main-text__inner {
   width: 820px;
   height: 555px;
   display: -webkit-box;
@@ -236,7 +236,7 @@ button:hover {
   justify-content: space-evenly;
 }
 
-.text__suptitle {
+.main-text__subtitle {
   font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -245,7 +245,7 @@ button:hover {
   color: #b5b5b5;
 }
 
-.title {
+.main-text__title {
   font-family: "Futura PT", sans-serif;
   font-size: 74px;
   text-transform: uppercase;
@@ -253,7 +253,7 @@ button:hover {
   color: #2a2a2a;
 }
 
-.text__subtitle {
+.main-text__question {
   font-family: "Georgia", serif;
   font-weight: normal;
   font-style: italic;
@@ -261,7 +261,7 @@ button:hover {
   color: #b5b5b5;
 }
 
-.text__paragraph {
+.main-text__paragraph {
   font-family: "Georgia", serif;
   font-weight: normal;
   font-style: normal;
