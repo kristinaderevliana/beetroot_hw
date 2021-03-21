@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"),
+    url("./fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"),
+    url("./fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"),
+    url("./fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "Futura PT";
+  src: local("Futura PT Heavy"), local("Futura-PT-Heavy"),
+    url("./fonts/FuturaPTHeavy/FuturaPT-Heavy.woff2") format("woff2"),
+    url("./fonts/FuturaPTHeavy/FuturaPT-Heavy.woff") format("woff"),
+    url("./fonts/FuturaPTHeavy/FuturaPT-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+
+  font-family: "Georgia";
+  src: local("Georgia Italic"), local("Georgia-Italic"),
+    url("./fonts/Georgia/Georgia-Italic.woff") format("woff"),
+    url("./fonts/Georgia/Georgia-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+
+  font-family: "Georgia";
+  src: local("Georgia"), url("./fonts/Georgia/Georgia.woff") format("woff"),
+    url("./fonts/Georgia/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  height: 900px;
+  margin: 0 auto;
+  background-color: #464f54;
+}
+
+.header {
+  height: 265px;
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 1000;
+  -webkit-transform: translateY(-8%);
+  -ms-transform: translateY(-8%);
+  transform: translateY(-8%);
+  top: 8%;
+}
+
+.header__title_container {
+  width: 875px;
+  height: 190px;
+  background-color: #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__title_inner {
+  width: 815px;
+  height: 90px;
+  border-bottom: 3px solid #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.header__subtitle {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #777;
+  letter-spacing: 0.32em;
+}
+
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__title_name::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 45px;
+  margin-left: 5px;
+  background-color: #afb1b3;
+}
+
+/* Control bar */
+.control-bar {
+  width: 812px;
+  height: 76px;
+  background-color: #f9be2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.control-bar__container {
+  width: 730px;
+}
+
+.control-bar__icons {
+  width: 570px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: #f9be2d;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: ease all 0.2s;
+}
+
+button:focus-within {
+  opacity: 1;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Text */
+.main-text {
+  margin: 0 auto;
+  width: 1060px;
+  height: 750px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 25px #1e2325;
+  box-shadow: 0 0 25px #1e2325;
+  position: relative;
+  -webkit-transform: translateY(calc(900px - 750px));
+  -ms-transform: translateY(calc(900px - 750px));
+  transform: translateY(calc(900px - 750px));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.main-text__container {
+  width: 910px;
+  height: 750px;
+  border-left: 2px solid #e8eced;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.main-text__inner {
+  width: 820px;
+  height: 555px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.main-text__subtitle {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.219em;
+  color: #b5b5b5;
+}
+
+.main-text__title {
+  font-family: "Futura PT", sans-serif;
+  font-size: 74px;
+  text-transform: uppercase;
+  letter-spacing: 0.053em;
+  color: #2a2a2a;
+}
+
+.main-text__question {
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 30px;
+  color: #b5b5b5;
+}
+
+.main-text__paragraph {
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 27px;
+  color: #2a2a2a;
+  line-height: 1.4;
+}
