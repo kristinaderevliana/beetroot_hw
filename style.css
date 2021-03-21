@@ -52,7 +52,7 @@ body {
   line-height: 1.9;
 }
 
-.text-1:first-letter {
+.text__paragraph-one:first-letter {
   float: left;
   font-family: "Playfair Display", serif;
   font-size: 110px;
