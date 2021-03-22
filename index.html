@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <!-- Container -->
+    <section class="sign-in">
+        <div class="sign-in__container">
+
+            <!-- Sign in, Join us -->
+            <div class="action">
+                <div class="action__container">
+                    <div class="sign__title">
+                        <h3>Sign in</h3>
+                    </div>
+                    <div class="join__title">
+                        <h3>Join us</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Username, Password, Checkbox -->
+            <form id="signin" action="#" method="post">
+                <div class="form__container">
+                    <label class="label">Username
+                        <input class="input" type="text" name="username" pattern="[A-Za-z\s]{6,}" required>
+                    </label>
+                    <label class="label">Password
+                        <input class="input" type="password" name="password" inputmode="numeric" autocomplete="current-password" minlength="6" maxlength="12" pattern="[0-9a-fA-F]{6,12}" required>
+                    </label>
+                    <div class="checkbox">
+                        <div class="check__container">
+                            <label class="check__label">Keep me signed in
+                                <input type="checkbox" name="signed">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Button -->
+            <button class="sign-btn" type="submit" form="signin" value="Sign In">Sign In</button>
+
+            <!-- Forgot password, Create an account -->
+            <div class="pass-account">
+                <a href="#" class="pass-account__link">Forgot password</a>
+                <a href="#" class="pass-account__link">Create an account</a>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

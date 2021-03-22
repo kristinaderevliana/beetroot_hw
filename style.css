@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 400px;
+  height: 500px;
+  background: url(./img/bg-1.jpg) center no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 25px 25px rgba(40, 61, 84, 0.9);
+  box-shadow: 0 25px 25px rgba(40, 61, 84, 0.9);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sign-in__container {
+  width: 265px;
+  height: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* Sign in, Join us */
+.action {
+  height: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.action__container {
+  width: 155px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.action__container h3 {
+  cursor: pointer;
+}
+
+.sign__title {
+  border-bottom: 2px solid #e66a64;
+}
+
+.join__title {
+  opacity: 0.6;
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.join__title:hover {
+  opacity: 1;
+  border-bottom: 2px solid #e66a64;
+}
+
+/* Username, Password */
+.form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 190px;
+  width: 100%;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  border: 2px solid rgba(185, 158, 226, 0.9);
+  background: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.input:focus {
+  outline: none;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  padding: 0 10px 0 10px;
+}
+
+/* Checkbox */
+.checkbox {
+  width: 100%;
+  height: 20px;
+}
+
+.check__container {
+  width: 145px;
+  height: 100%;
+}
+
+.check__label {
+  display: block;
+  position: relative;
+  padding-left: 23px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check__label input {
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.check__label:hover input ~ .checkmark {
+  background-color: #c3c3c3;
+}
+
+.check__label input:checked ~ .checkmark {
+  background-color: #23ae92;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check__label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check__label .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  border-radius: 1px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Button */
+.sign-btn {
+  height: 42px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #23ae92;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.sign-btn:focus {
+  outline: none;
+}
+
+.sign-btn:hover {
+  background-color: #00a080;
+}
+
+/* Forgot password, Create an account */
+.pass-account {
+  height: 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.pass-account__link {
+  height: 22px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #9894c3;
+  border-bottom: 1px solid rgba(152, 148, 195, 0.5);
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.pass-account__link:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
